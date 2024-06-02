@@ -6,4 +6,6 @@ const postsController = require('../controllers/posts.controller');
 
 postsRouter.get('/', postsController.getPostList);
 
+postsRouter.get('/posts', postsController.getPosts);
+
 module.exports = postsRouter;
